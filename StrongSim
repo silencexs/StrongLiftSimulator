@@ -14,7 +14,7 @@ TpTab:AddButton({
 	Callback = function()
         local args = {
             [1] = "Equip",
-            [2] = "Sol",
+            [2] = "Meteor",
             [3] = "BL"
         }
         
