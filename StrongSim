@@ -1,0 +1,38 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Silence Hub | Strong Lifting Simulator 💪", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local TpTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TpTab:AddLabel("You Will Get Kick After Use But It Works Just Rejoin")
+
+TpTab:AddButton({
+	Name = "Equip Best Train",
+	Callback = function()
+        local args = {
+            [1] = "Equip",
+            [2] = "Sun",
+            [3] = "BL"
+        }
+        
+        game:GetService("StarterGui").Events.Tool:InvokeServer(unpack(args))
+    end
+}) 
+
+
+TpTab:AddButton({
+	Name = "Equip Best DNA",
+	Callback = function()
+        local args = {
+            [1] = "Equip",
+            [2] = "Space DNA",
+            [3] = "BL"
+        }
+        
+        game:GetService("StarterGui").Events.DNA:InvokeServer(unpack(args))
+    end
+}) 
+
