@@ -1,38 +1,20 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Silence Hub | Strong Lifting Simulator 💪", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()local Window = OrionLib:MakeWindow({Name = "💪 Get Strong Simulator/20IK 20IK HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+  Name = "Tab 1",
+  Icon = "rbxassetid://16391013663",
+  PremiumOnly = false
+})local Section = Tab:AddSection({
+  Name = "Section"
+})OrionLib:MakeNotification({
+  Name = "Title!",
+  Content = "Notification content... what will it say??",
+  Image = "rbxassetid://16391013663",
+  Time = 5
+})Tab:AddButton({
+  Name = "INSTANT UGC!",
 
-local TpTab = Window:MakeTab({
-	Name = "Main",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+Callback = function()   
+  loadstring(game:HttpGet(('https://pastebin.com/raw/RGApN10f'),true))()
+ print("button pressed")
+  end    
 })
-
-TpTab:AddLabel("You Will Get Kick After Use But It Works Just Rejoin")
-
-TpTab:AddButton({
-	Name = "Equip Best Train",
-	Callback = function()
-        local args = {
-            [1] = "Equip",
-            [2] = "Tree",
-            [3] = "BL"
-        }
-        
-        game:GetService("StarterGui").Events.Tool:InvokeServer(unpack(args))
-    end
-}) 
-
-
-TpTab:AddButton({
-	Name = "Equip Best DNA",
-	Callback = function()
-        local args = {
-            [1] = "Equip",
-            [2] = "Space DNA",
-            [3] = "BL"
-        }
-        
-        game:GetService("StarterGui").Events.DNA:InvokeServer(unpack(args))
-    end
-}) 
-
